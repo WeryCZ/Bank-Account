@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<l10n>
+  <elements>
+    <e k="global_bankAccount_tab" v="банківський рахунок" />
+  </elements>
+  <texts>
+    <text name="bankAccount_tab" text="Банківський рахунок" />
+    <text name="bankAccount_deposit" text="Внесення" />
+    <text name="bankAccount_withdraw" text="Виведення" />
+    <text name="bankAccount_quickAmount" text="Швидка сума" />
+    <text name="bankAccount_log" text="Журнал переказів" />
+    <text name="bankAccount_sharedBalance" text="Спільний баланс" />
+  </texts>
+</l10n>

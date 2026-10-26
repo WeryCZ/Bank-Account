@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GUIProfiles>
+    <Profile name="SharedBankStatsColumnHeader" extends="baseReference" with="anchorTopStretchingX">
+        <imageColor value="0 0 0 0"/>
+    </Profile>
+
+    <Profile name="SharedBankStatsListItem" extends="baseReference" with="anchorTopStretchingX alternating">
+        <height value="56px"/>
+        <imageColor value="$preset_fs25_colorGrey"/>
+        <imageSelectedColor value="$preset_fs25_colorMainHighlight"/>
+        <alternateBackgroundColor value="$preset_fs25_colorGreyDark_50"/>
+    </Profile>
+
+    <Profile name="SharedBankStatsListSlider" extends="fs25_listSliderBox" with="anchorTopRight">
+        <position value="28px -40px"/>
+        <size value="6px 660px"/>
+    </Profile>
+
+    <Profile name="SharedBankLogSlider" extends="SharedBankStatsListSlider">
+        <size value="6px 530px"/>
+    </Profile>
+
+    <Profile name="SharedBankStatsHeaderText" extends="baseReference">
+        <imageColor value="0 0 0 0"/>
+        <textSize value="16px"/>
+        <textBold value="true"/>
+        <textUpperCase value="true"/>
+        <textColor value="$preset_colorWhite_50"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+        <textAlignment value="left"/>
+    </Profile>
+
+    <Profile name="SharedBankStatsHeaderTextRight" extends="SharedBankStatsHeaderText">
+        <textAlignment value="right"/>
+    </Profile>
+
+    <Profile name="SharedBankStatsHeaderTextCenter" extends="SharedBankStatsHeaderText">
+        <textAlignment value="center"/>
+    </Profile>
+
+    <Profile name="SharedBankStatsRowCell" extends="baseReference" with="anchorStretchingYLeft">
+        <imageColor value="0 0 0 0"/>
+        <textSize value="16px"/>
+        <textColor value="$preset_colorWhite"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+        <textAlignment value="left"/>
+    </Profile>
+
+    <Profile name="SharedBankStatsRowCellRight" extends="SharedBankStatsRowCell">
+        <textAlignment value="right"/>
+    </Profile>
+
+    <Profile name="SharedBankStatsRowCellCenter" extends="SharedBankStatsRowCell">
+        <textAlignment value="center"/>
+    </Profile>
+
+    <Profile name="SharedBankLogCell" extends="baseReference">
+        <imageColor value="0 0 0 0"/>
+        <textSize value="14px"/>
+        <textColor value="$preset_colorWhite"/>
+        <textAlignment value="left"/>
+    </Profile>
+
+    <Profile name="SharedBankLogCellRight" extends="SharedBankLogCell">
+        <textAlignment value="right"/>
+    </Profile>
+
+    <Profile name="SharedBankStatsSectionHeader" extends="baseReference" with="anchorTopStretchingX">
+        <height value="34px"/>
+        <imageColor value="0.16 0.20 0.24 0.9"/>
+    </Profile>
+
+    <Profile name="SharedBankStatsSectionHeaderText" extends="baseReference" with="anchorTopStretchingX">
+        <imageColor value="0 0 0 0"/>
+        <textSize value="16px"/>
+        <textBold value="true"/>
+        <textUpperCase value="true"/>
+        <textColor value="$preset_colorWhite"/>
+        <textDisabledColor value="$preset_colorDisabled"/>
+        <textAlignment value="left"/>
+        <textOffset value="10px 0px"/>
+    </Profile>
+
+    <Profile name="SharedBankBalanceText" extends="SharedBankStatsHeaderText">
+        <textSize value="18px"/>
+        <textAlignment value="center"/>
+    </Profile>
+
+    <Profile name="SharedBankLocalBalanceText" extends="SharedBankBalanceText"/>
+
+    <Profile name="SharedBankBalanceBar" extends="baseReference"/>
+
+    <Profile name="SharedBankBalanceCell" extends="baseReference">
+        <imageColor value="0 0 0 0.25"/>
+    </Profile>
+
+    <Profile name="SharedBankQuickLabel" extends="SharedBankStatsHeaderText"/>
+
+    <Profile name="SharedBankPanelHeading" extends="SharedBankStatsHeaderText">
+        <textSize value="22px"/>
+        <textAlignment value="center"/>
+    </Profile>
+
+    <Profile name="SharedBankHeadingUnderline" extends="baseReference">
+        <imageColor value="1 1 1 0.65"/>
+    </Profile>
+
+    <Profile name="SharedBankAmountInput" extends="fs25_textInput"/>
+
+    <Profile name="SharedBankInputFrame" extends="baseReference">
+        <imageColor value="0.75 0.75 0.75 1"/>
+    </Profile>
+
+    <Profile name="SharedBankActionButton" extends="baseReference">
+        <imageColor value="0.25 0.29 0.33 1"/>
+        <imageHoverColor value="0.35 0.55 0.70 1"/>
+        <imagePressedColor value="0.15 0.20 0.24 1"/>
+        <imageDisabledColor value="0.18 0.18 0.18 0.7"/>
+        <textColor value="1 1 1 1"/>
+        <textDisabledColor value="0.65 0.65 0.65 1"/>
+    </Profile>
+
+    <Profile name="SharedBankQuickButton" extends="SharedBankActionButton">
+        <textSize value="14px"/>
+        <imageDisabledColor value="0.75 0.75 0.75 1"/>
+        <textDisabledColor value="0.20 0.20 0.20 1"/>
+    </Profile>
+
+    <Profile name="SharedBankDivider" extends="baseReference">
+        <imageColor value="1 1 1 0.65"/>
+    </Profile>
+
+</GUIProfiles>

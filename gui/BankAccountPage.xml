@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GUI>
+    <GuiElement profile="fs25_menuContainer">
+        <BoxLayout profile="fs25_subCategorySelectorTabbedBox">
+            <Button profile="fs25_subCategorySelectorTabbedTab" id="bankAccountTab" text="$l10n_bankAccount_tab" onClick="onClickSharedBank">
+                <ThreePartBitmap profile="fs25_subCategorySelectorTabbedTabBg" name="background"/>
+            </Button>
+        </BoxLayout>
+        <GuiElement profile="fs25_subCategorySelectorTabbedContainer" id="bankAccountPage">
+            <GuiElement profile="SharedBankBalanceBar" size="1420px 50px" position="0px 700px">
+                <GuiElement profile="SharedBankBalanceCell" size="1420px 42px" position="10px 0px">
+                    <Text profile="SharedBankBalanceText" id="depositBalance" position="0px 0px" size="1420px 42px" text="Bank account balance: 0"/>
+                </GuiElement>
+            </GuiElement>
+            <GuiElement size="450px 620px" position="0px 35px">
+                <Text profile="SharedBankPanelHeading" position="10px 575px" size="430px 38px" text="$l10n_bankAccount_deposit"/>
+                <GuiElement profile="SharedBankHeadingUnderline" size="430px 2px" position="10px 568px"/>
+                <GuiElement profile="SharedBankInputFrame" position="8px 523px" size="434px 52px"/>
+                <TextInput profile="SharedBankAmountInput" id="depositAmount" inputType="number" onTextChanged="onDepositAmountChanged" onFocusLost="onDepositAmountFocusLost" position="10px 525px" size="430px 48px" text=""/>
+                <Button profile="SharedBankActionButton" id="depositButton" position="10px 460px" size="430px 52px" text="$l10n_bankAccount_deposit" onClick="onClickDeposit"/>
+                <Text profile="SharedBankQuickLabel" position="10px 395px" size="430px 32px" text="$l10n_bankAccount_quickAmount"/>
+                <Button profile="SharedBankQuickButton" id="depositQuick10" position="10px 340px" size="205px 48px" text="10" onClick="onClickDepositQuick10"/>
+                <Button profile="SharedBankQuickButton" id="depositQuick100" position="225px 340px" size="205px 48px" text="100" onClick="onClickDepositQuick100"/>
+                <Button profile="SharedBankQuickButton" id="depositQuick1000" position="10px 285px" size="205px 48px" text="1,000" onClick="onClickDepositQuick1000"/>
+                <Button profile="SharedBankQuickButton" id="depositQuick10000" position="225px 285px" size="205px 48px" text="10,000" onClick="onClickDepositQuick10000"/>
+                <Button profile="SharedBankQuickButton" id="depositQuick1000000" position="10px 230px" size="205px 48px" text="1,000,000" onClick="onClickDepositQuick1000000"/>
+                <Button profile="SharedBankQuickButton" id="depositQuickAll" position="225px 230px" size="205px 48px" text="0" onClick="onClickDepositQuickAll"/>
+                <GuiElement profile="SharedBankDivider" size="2px 620px" position="448px 0px"/>
+            </GuiElement>
+            <GuiElement size="450px 620px" position="485px 35px">
+                <Text profile="SharedBankPanelHeading" position="10px 575px" size="430px 38px" text="$l10n_bankAccount_withdraw"/>
+                <GuiElement profile="SharedBankHeadingUnderline" size="430px 2px" position="10px 568px"/>
+                <GuiElement profile="SharedBankInputFrame" position="8px 523px" size="434px 52px"/>
+                <TextInput profile="SharedBankAmountInput" id="withdrawAmount" inputType="number" onTextChanged="onWithdrawAmountChanged" onFocusLost="onWithdrawAmountFocusLost" position="10px 525px" size="430px 48px" text=""/>
+                <Button profile="SharedBankActionButton" id="withdrawButton" position="10px 460px" size="430px 52px" text="$l10n_bankAccount_withdraw" onClick="onClickWithdraw"/>
+                <Text profile="SharedBankQuickLabel" position="10px 395px" size="430px 32px" text="$l10n_bankAccount_quickAmount"/>
+                <Button profile="SharedBankQuickButton" id="withdrawQuick10" position="10px 340px" size="205px 48px" text="10" onClick="onClickWithdrawQuick10"/>
+                <Button profile="SharedBankQuickButton" id="withdrawQuick100" position="225px 340px" size="205px 48px" text="100" onClick="onClickWithdrawQuick100"/>
+                <Button profile="SharedBankQuickButton" id="withdrawQuick1000" position="10px 285px" size="205px 48px" text="1,000" onClick="onClickWithdrawQuick1000"/>
+                <Button profile="SharedBankQuickButton" id="withdrawQuick10000" position="225px 285px" size="205px 48px" text="10,000" onClick="onClickWithdrawQuick10000"/>
+                <Button profile="SharedBankQuickButton" id="withdrawQuick1000000" position="10px 230px" size="205px 48px" text="1,000,000" onClick="onClickWithdrawQuick1000000"/>
+                <Button profile="SharedBankQuickButton" id="withdrawQuickAll" position="225px 230px" size="205px 48px" text="0" onClick="onClickWithdrawQuickAll"/>
+                <GuiElement profile="SharedBankDivider" size="2px 620px" position="448px 0px"/>
+            </GuiElement>
+            <GuiElement size="450px 620px" position="970px 35px">
+                <Text profile="SharedBankPanelHeading" position="10px 575px" size="430px 38px" text="$l10n_bankAccount_log"/>
+                <GuiElement profile="SharedBankHeadingUnderline" size="430px 2px" position="10px 568px"/>
+                <SmoothList id="sharedBankLogLayout" size="100% 530px" position="0px 42px">
+                    <ListItem profile="SharedBankStatsListItem">
+                        <Text profile="SharedBankLogCell" position="10px 0px" size="195px 56px" name="dateSave"/>
+                        <Text profile="SharedBankLogCellRight" position="205px 0px" size="235px 56px" name="amountBalance"/>
+                    </ListItem>
+                </SmoothList>
+                <ThreePartBitmap profile="SharedBankLogSlider">
+                    <Slider profile="fs25_listSlider" dataElementId="sharedBankLogLayout"/>
+                </ThreePartBitmap>
+            </GuiElement>
+        </GuiElement>
+    </GuiElement>
+</GUI>
